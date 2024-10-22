@@ -1,0 +1,30 @@
+#container{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    position: absolute;
+    animation-name: fisrtAnime;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes firstAnime{
+    0%{
+        top: 0;
+        left: 0;
+    }
+
+    25%{
+        top: 75%;
+        left: 75%;
+        
+    }
+    75%{
+        top: 75%;
+        left: 0;
+    }
+    100%{
+        top: 0%;
+        left: 0%;
+    }
+}

@@ -1,0 +1,63 @@
+<!-- 1.pseudo element selector
+ :nth of type()
+ :nth---last child--
+ :nth -of - last-child
+ :nth-child 
+ :nth -of-last-of-type  -->
+ <!-- 2.pseudo class selector -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div : hover 
+        1.active
+        2.focus---it is important */
+        h2:hover{
+            color: red;
+        }
+        #active:active{
+            color: blue;
+        }
+        button:focus , input:focus
+        {
+            background-color: greenyellow;
+        }
+
+        h2:nth-of-type(1):hover{
+            color: red;
+        }
+        #container>p:nth-of-type(even){
+            color:blue;
+        }
+        #container>p:nth-of-type(odd){
+            color:brown;
+        } 
+        #container>p:nth-of-type(7){
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <h2>Hover</h2>
+    <h2 id="active">Active</h2>
+    <div id="container">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+    </div>
+
+    
+</body>
+</html>
